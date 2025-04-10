@@ -14,10 +14,15 @@ void main() {
     MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        brightness: Brightness.light,
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.purple,
           brightness: Brightness.light,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
         ),
       ),
       home: const HomePage(),
